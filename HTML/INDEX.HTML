@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 
 <html>
     <head>
@@ -7,4 +7,45 @@
     <body>
         <h1>hello world</h1>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Example</title>
+    <style>
+      div {
+        border-top: 5px solid black;
+        border-right: 3px dashed red;
+        border-bottom: 2px dotted green;
+        border-left: 4px solid blue;
+        
+      }
+      div {
+        border-width: 6px 4px 6px 8px; /* top right bottom left */
+        border-style: solid dotted dashed double;
+        border-color: red green blue yellow;
+      }
+      div {
+        border: 3px solid black;
+        border-radius: 10px 10px 10px 10px; /* top-left top-right bottom
+right bottom-left */
+      }
+      .box {
+        border: 5px solid black; /* Width, Style, Color */
+        padding: 10px; /* Space inside the border */
+        width: 200px;
+        text-align: center;
+      }
+      .box {
+        color: rgb(124, 15, 22);
+      }
+    </style>
+  </head>
+  <body>
+    <div><b>This is a bordered box</b></div>
+    <p style="color: blue; font-size: 20px">This is a blue paragraph.</p>
+  </body>
 </html>
