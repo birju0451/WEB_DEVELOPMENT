@@ -62,6 +62,7 @@ console.log(anotherUsername[1]); // Output: true
 // Implicit Type Conversion (Type Coercion)
 console.log(1 + "1"); // Output: "11" (Number 1 converted to String)
 console.log("1" + 1); // Output: "11" (Number 1 converted to String)
+console.log(1 + 1.2)
 
 // Explicit Type Conversion
 
@@ -77,7 +78,11 @@ console.log(typeof isValue2); // Output: boolean
 
 // String to Number using `Number()`
 let isValue3 = "2";
-console.log(typeof Number(isValue3)); // Output: number
+console.log("---");
+
+let ans = Number(isValue3);
+console.log(ans);
+console.log(typeof ans);
 
 // Invalid number conversion
 let isValue4 = "2abc";
