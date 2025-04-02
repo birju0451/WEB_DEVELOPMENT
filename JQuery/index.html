@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery tutorial</title>
+  </head>
+  <body>
+    <p>this is my body 1</p>
+    <p>this is my body 2</p>
+    <p>this is my body 3</p>
+    <p>this is my body 4</p>
+  </body>
+  <script src="jquery-3.7.1.min.js"></script>
+
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script> -->
+  <script>
+    $(function () {
+      //Your jQuery code here
+      console.log($);
+      console.log("we are using jQuery command");
+      // $('p').click();//click on p
+      $("p").click(function () {
+        console.log("you click on p");
+        $(this).hide(); // ✅ Fix: Hide only the clicked paragraph
+      }); //do this when we click on p
+    });
+  </script>
+</html>
