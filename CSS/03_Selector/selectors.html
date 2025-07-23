@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*1.Universal selector*/
+        *{
+          margin:0;
+          padding: 0;
+          box-sizing: border-box;
+          text-align: center;
+        }
+
+        /*2.Type selector*/
+        p{
+          font-size: 16px;
+          margin: 10px 20px 15px 20px;
+          padding:1px 2px ;
+        }
+
+        /*3.Class selector*/
+        .highlight{
+          background-color: rgb(170, 105, 196);
+        }
+
+        /*4.ID selector*/
+        #header{
+          background-color: rgb(39, 167, 196);
+        }
+
+        /*5.Attribute selector*/
+        input[type="text"]{
+          border: 2px solid hsl(36, 68%, 46%);
+        }
+
+        /*6.Decendent selector*/
+        article p{
+          font-style: italic;
+          background-color: #505bae;
+        }
+        /*7.Child selector*/
+       div > p {
+        background-color: #ac3939;
+       }
+        /*8.Adjacent sibling selector*/
+        h1+p{
+          font-weight: bold;
+        }
+
+        /*9.General sibling Selector*/
+        h2 ~ p {
+          color: rgb(199, 43, 194);
+        }
+
+        /*10. Pseudo-class  Selector*/
+        a:hover{
+          background-color: #e0cc18;
+          text-decoration: none;
+          color: aliceblue;
+          padding: 10px; 
+          margin: 4px;       
+        }
+        article:first-child{
+          color: rgb(155, 100, 100);
+        }
+        /*11.Pseudo-element Selector*/
+        p::first-letter{
+          font-size: 2em;
+          color: purple;
+        }
+        p::before{
+          content: "Note ";
+          font-weight: bold;
+        }
+        p::after{
+          content: "HEY THERE";
+        }
+
+        /*12.Grouping Selector*/
+        h1,h2,h3{
+          color: chartreuse;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">This is the header</header>
+    <h1>Main Heading</h1>
+    <p>
+      this paragraph is adjest to h1 ans demonstrates the adjacent sibling
+      selector.
+    </p>
+    <p>This is the regular paragraph showing the type of Selector</p>
+    <p class="highlight">This paragraph has a highligh calss ,demonstrating the class Selector</p>
+    <input type="text" placeholder="Enter the text hare" />
+
+    <article>
+      <p>
+        This paragraph is inside an artical , Showing the decendant selector
+      </p>
+      <p>
+        This paragraph is inside an artical , Showing the decendant selector
+      </p>
+
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi
+          reprehenderit optio?
+        </p>
+        <!-- this is also decendent element-->
+      </div>
+    </article>
+
+    <div>
+      <p>i am a child</p>
+      <p>i am a child</p>
+      <section>
+        <p>I am decendant</p>
+      </section>
+    </div>
+
+    <ul>
+      <li>Direct child list iteam</li>
+      <li>
+        Another Direct child
+        <ul>
+          <li>This is not a direct child of the first ul</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <h2>Sub Heading</h2>
+    <p>
+      this is sibling paragraph to h2, demonstrating the general sibling
+      selector.
+    </p>
+    <div>this is a sibling div to h2.</div>
+    <p>this is another sibling paragraph to h2.</p>
+    <a href="#">Hover over me to see the psedo-class selector in action</a>
+    <p>
+      This paragraph demonstrates psedo-element selector with a syled first line
+      and first letter.
+    </p>
+  </body>
+</html>

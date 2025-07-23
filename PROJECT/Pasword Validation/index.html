@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Validation</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- Container for the form -->
+<div class="container">
+  <form action="#">
+    <!-- Username input field -->
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <!-- Password input field with pattern validation -->
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" required
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters">
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<!-- Password rules message box -->
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
