@@ -4,7 +4,8 @@
 
 // Defining an object 'username' with properties
 const username = {
-  firstname: "birju kumar",
+  firstname: "birju",
+  lastName :"kumar",
   profession: "Student",
   isLoggedin: true,
 };
@@ -33,7 +34,7 @@ let today = new Date();
 
 console.log(today); // Output: Full date and time
 console.log(today.getDate()); // Output: Current day of the month
-console.log(today.getMonth()); // Output: Month (0-based index, Jan=0)
+console.log(today.getMonth()+1); // Output: Month (0-based index, Jan=0)
 console.log(today.getFullYear()); // Output: Current year
 
 // Display formatted date correctly
