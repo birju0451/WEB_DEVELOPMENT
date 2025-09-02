@@ -7,7 +7,7 @@ let car = {
   },
 };
 console.log(car.start());
-//------------->
+//------------------------------------------------------------------->
 function Person(name, age) {
   // 'this' points to the new object when called with 'new'
   this.name = name;
@@ -43,11 +43,11 @@ console.log(dog.sound);
 // or function body printed (in browser)
 
 //-------------------------------------------------------------------------------------->
-// Array.prototype.hitesh = function(){
-//     return `Customer method ${this}`;
-// };
-// let myArray = [1,2,3,4];
-// console.log(myArray.hitesh());
+Array.prototype.hitesh = function(){
+    return `Customer method ${this}`;
+};
+let myArray1 = [1,2,3,4];
+console.log(myArray1.hitesh());
 
 // 🟢 Step 1: Add a custom method to Array's prototype
 // Every array in JavaScript inherits from Array.prototype

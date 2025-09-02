@@ -2,11 +2,11 @@
 let computer = {cpu : 12};
 let lenovo = {
     screen: "HD",
-    __proto__:computer
+    __proto__:computer,
 }
 let tomHardware = {};
 
-// console.log(`lenovo`, lenovo.__proto__);//drunder proto
+console.log(`lenovo`, lenovo.__proto__);//drunder proto
 
 //2-----------------------------------------------------
 
