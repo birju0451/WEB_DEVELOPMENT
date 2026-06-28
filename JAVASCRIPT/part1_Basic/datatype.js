@@ -1,6 +1,6 @@
 /*
 =====================================================
-                JavaScript Data Types
+JavaScript Data Types
 =====================================================
 
 JavaScript has 8 Data Types.
