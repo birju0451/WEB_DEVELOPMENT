@@ -1,64 +1,153 @@
-// console.log("chai");  // This line is commented out and won't run
-
 /*
-This is a multiline comment.
-It allows you to write multiple lines of text inside the comment block.
+=====================================================
+                JavaScript Data Types
+=====================================================
+
+JavaScript has 8 Data Types.
+
+Primitive Data Types (7)
+1. String
+2. Number
+3. Boolean
+4. Undefined
+5. Null
+6. Symbol
+7. BigInt
+
+Reference Data Type (1)
+8. Object
+=====================================================
 */
 
-/* 
-/*
-===============================================
-   JavaScript Data Types - Complete Concept
-===============================================
-There are 8 data types in JavaScript:
-👉 7 Primitive types
-👉 1 Reference type (Object)
-*/
 
-// 1. STRING - sequence of characters
+// ==========================
+// 1. String
+// ==========================
+
 let name = "Birju";
-console.log("String:", name, "Type:", typeof name);
-console.log("String: "+name , "Type: "+typeof name)
 
-// 2. NUMBER - integers & floating-point
-let age = 25;
-let pi = 3.14159;
-console.log("Number:", age, pi, "Type:", typeof age);
+console.log("----- String -----");
+console.log("Value :", name);
+console.log("Type  :", typeof name);
+console.log();
 
-// 3. BOOLEAN - logical true/false
+
+// ==========================
+// 2. Number
+// ==========================
+
+let age = 20;
+let pi = 3.14;
+
+console.log("----- Number -----");
+console.log("Value :", age);
+console.log("Value :", pi);
+console.log("Type  :", typeof age);
+console.log();
+
+
+// ==========================
+// 3. Boolean
+// ==========================
+
 let isStudent = true;
-let hasJob = false;
-console.log("Boolean:", isStudent, hasJob, "Type:", typeof isStudent);
+let isLoggedIn = false;
 
-// 4. UNDEFINED - variable declared but no value assigned
-let x;
-console.log("Undefined:", x, "Type:", typeof x);
+console.log("----- Boolean -----");
+console.log("Value :", isStudent);
+console.log("Value :", isLoggedIn);
+console.log("Type  :", typeof isStudent);
+console.log();
 
-// 5. NULL - intentional absence of value
-let y = null;
-console.log("Null:", y, "Type:", typeof y); // ⚠ typeof null = "object" (historical bug)
 
-// 6. SYMBOL - unique and immutable identifiers (ES6)
-let sym1 = Symbol("id");
-let sym2 = Symbol("id");
-console.log("Symbol:", sym1 === sym2, "Type:", typeof sym1); // false
+// ==========================
+// 4. Undefined
+// ==========================
 
-// 7. BIGINT - large integers beyond safe Number (ES2020+)
-let bigNum = 1234567890123456789012345678901234567890n;
-console.log("BigInt:", bigNum, "Type:", typeof bigNum);
+let city;
 
-// 8. OBJECT - collection of key-value pairs or complex data
+console.log("----- Undefined -----");
+console.log("Value :", city);
+console.log("Type  :", typeof city);
+console.log();
+
+
+// ==========================
+// 5. Null
+// ==========================
+
+let address = null;
+
+console.log("----- Null -----");
+console.log("Value :", address);
+console.log("Type  :", typeof address); // object (JavaScript historical bug)
+console.log();
+
+
+// ==========================
+// 6. Symbol
+// ==========================
+
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+
+console.log("----- Symbol -----");
+console.log("id1 == id2 :", id1 == id2);
+console.log("Type :", typeof id1);
+console.log();
+
+
+// ==========================
+// 7. BigInt
+// ==========================
+
+let population = 123456789012345678901234567890n;
+
+console.log("----- BigInt -----");
+console.log("Value :", population);
+console.log("Type  :", typeof population);
+console.log();
+
+
+// ==========================
+// 8. Object
+// ==========================
+
 let person = {
-  name: "Birju",
-  age: 25,
-  isStudent: true
+    name: "Birju",
+    age: 20,
+    city: "Chennai"
 };
-console.log("Object:", person, "Type:", typeof person);
+
+console.log("----- Object -----");
+console.log("Value :", person);
+console.log("Type  :", typeof person);
+console.log();
+
 
 /*
------------------------------------------------
-🔑 Quick Recap:
-- Primitive types (immutable): String, Number, Boolean, Undefined, Null, Symbol, BigInt
-- Reference type: Object (arrays, functions, dates, etc.)
------------------------------------------------
+=====================================================
+Quick Revision
+
+String      -> Text (e.g., "Hello")
+Number      -> Integer & Decimal (e.g., 10, 3.14)
+Boolean     -> true / false
+Undefined   -> Variable declared but not assigned
+Null        -> Intentional empty value
+Symbol      -> Unique identifier
+BigInt      -> Very large integer
+Object      -> Collection of key-value pairs
+
+Primitive Data Types:
+✔ String
+✔ Number
+✔ Boolean
+✔ Undefined
+✔ Null
+✔ Symbol
+✔ BigInt
+
+Reference Data Type:
+✔ Object
+=====================================================
 */

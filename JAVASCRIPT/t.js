@@ -1,3 +1,9 @@
-let x = 0;
-x = 9;
-console.log(x);
+let person = {
+    name : "Birju",
+    age : 20,
+    city: "Chennai"
+};
+
+console.log("Value :",person);
+console.log("Type :",typeof person);
+

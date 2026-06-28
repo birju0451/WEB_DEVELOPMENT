@@ -1,17 +1,71 @@
 /*
-===============================================
+========================================
    let vs const in JavaScript
-===============================================
-- let   → allows re-assignment
-- const → constant (cannot be re-assigned)
+========================================
+
+let   → Value can be changed later.
+const → Value cannot be changed later.
+
 */
 
-// ✅ Using let (re-assignment allowed)
-let gameName = "spiderMan";
-gameName = "batman"; // allowed
-console.log("Game Name:", gameName); // Output: batman
+// ======================
+// Example 1: let
+// ======================
 
-// // ❌ Using const (re-assignment NOT allowed)
-// const username = "birju679";
-// username = "birju108"; // ❌ TypeError: Assignment to constant variable
-// console.log("Username:", username);
+let gameName = "Spider-Man";
+
+console.log("Before:", gameName);
+
+gameName = "Batman"; // ✅ Re-assignment allowed
+
+console.log("After :", gameName);
+
+// ======================
+// Example 2: const
+// ======================
+
+const username = "birju679";
+
+console.log("Username:", username);
+
+// ❌ This is NOT allowed
+// username = "birju108";
+
+// If you remove the // above, JavaScript will throw:
+// TypeError: Assignment to constant variable.
+/*
+========================================
+   let vs const in JavaScript
+========================================
+
+let   → Value can be changed later.
+const → Value cannot be changed later.
+
+*/
+
+// ======================
+// Example 1: let
+// ======================
+
+let gameName = "Spider-Man";
+
+console.log("Before:", gameName);
+
+gameName = "Batman"; // ✅ Re-assignment allowed
+
+console.log("After :", gameName);
+
+
+// ======================
+// Example 2: const
+// ======================
+
+const username = "birju679";
+
+console.log("Username:", username);
+
+// ❌ This is NOT allowed
+// username = "birju108";
+
+// If you remove the // above, JavaScript will throw:
+// TypeError: Assignment to constant variable.
