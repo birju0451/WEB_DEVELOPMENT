@@ -1,6 +1,6 @@
 /*
 ========================================
-        let vs const in JavaScript
+let vs const in JavaScript
 ========================================
 
 let   -> Allows reassignment.
