@@ -1,7 +1,4 @@
-let coutdown = [];
-let j = 5;
-while(j>0){
-    coutdown.push(j);
-    j--;
+let arr = []
+for (let i = 0; i < 10; i++) {
+    arr = i;
 }
-console.log(coutdown);

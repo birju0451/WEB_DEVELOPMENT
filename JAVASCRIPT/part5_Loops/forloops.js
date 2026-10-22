@@ -1,7 +1,4 @@
-let sum = 0;
-let i = 0;
-while( i<=5 ){
-    sum = sum+i;
-    i++;
+for(let i=1;i<= 5;i++){
+    console.log();
+    
 }
-console.log(sum);
