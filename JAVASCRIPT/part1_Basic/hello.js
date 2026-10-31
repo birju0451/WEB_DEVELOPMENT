@@ -32,7 +32,7 @@ console.log("Welcome");
 let name = "Birju";
 let age = 20;
 
-console.log(name, age);
+console.log(name,age);
 
 // Output:
 // Birju 20

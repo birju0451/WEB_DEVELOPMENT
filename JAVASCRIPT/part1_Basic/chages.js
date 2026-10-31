@@ -60,3 +60,8 @@ console.log("Username:", username);
 
 ========================================
 */
+var x = 11
+var x =  10
+console.log(x);
+let x
+x = 112

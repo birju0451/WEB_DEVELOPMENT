@@ -1,10 +1,13 @@
-let student ={
-    name :"Birju",
-    age :21,
-    marks:90
+// 7. Closure Counter Example
+function outerFunction() {
+  let count = 0; // private variable
+  return function () {
+    count++;
+    return count;
+  };
 }
+let counter = outerFunction();
+console.log(counter()); // 1
+console.log(counter()); // 2
+console.log(counter()); // 3
 
-for(let key in student){
-    console.log(key,"->",student[key]);
-    
-}

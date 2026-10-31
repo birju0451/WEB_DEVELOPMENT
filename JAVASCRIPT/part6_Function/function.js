@@ -8,6 +8,7 @@ function greet(name) {
 greet("Birju");
 // Output: Hello Birju
 
+
 // ------------------------------------------------
 // 2. Function Returning a Value
 function makeTea(typeTea) {
